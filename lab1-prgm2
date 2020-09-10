@@ -1,0 +1,5 @@
+AREA OF A TRIANGLE
+a=int(input("enter a : "))
+b=int(input("enter b : "))
+area=(a*b)/2
+print('area=',area)
