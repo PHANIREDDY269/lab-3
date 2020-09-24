@@ -1,0 +1,25 @@
+l=[]
+n=int(input("Enter no of elements:"))
+for i in range(0,n):
+  k=int(input("Enter element:"))
+  l.append(k)
+print(l)
+flag=0
+p=int(input("Enter an Element to search:"))
+for i in range(0,n):
+ if(p==l[i]):
+   print("Element is found loc",i+1)
+   flag=1
+if(flag==0):
+   print("Element not Found")   
+
+output:
+Enter no of elements:5
+Enter element:5
+Enter element:1
+Enter element:15
+Enter element:20
+Enter element:30
+[5, 1, 15, 20, 30]
+Enter an Element to search:30
+Element is found loc 5
