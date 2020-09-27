@@ -1,0 +1,10 @@
+a=int(input("Enter a"))
+b=int(input("Enter b"))
+x=a
+a=b
+b=x
+print(a,b)
+ output
+ Enter a3
+ Enter b2
+ 2 3
