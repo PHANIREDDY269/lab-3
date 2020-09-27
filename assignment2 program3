@@ -1,0 +1,121 @@
+def copy(a):
+  c=[]*len(a)
+  for i in a:
+    c.append(i)
+  print("copied elements are",c)  
+def duplicates(a):
+  b=[]
+  for i in a:
+    if i not in b:
+      b.append(i)
+  print("Duplicates are",b)
+def kthIndex():
+  k=int(input("Enter kth index"))
+  del a[k]
+  print("after removing k th index",a)
+def search(a):
+  p=int(input("enter search key"))
+  f=0
+  for i in a:
+   if(p==i):
+    f=1
+  if(f==1):
+     print("the element is present")
+  else:
+     print("no such element is found")
+s=int(input("Enter size of array"))
+a=[]
+print("enter ",s," elements:")
+for i in range(0,s):
+  q=int(input())
+  a.append(q)
+print("1.copy  2.Remove duplicates  3.Search element 4.Delete kthindex   5.Display contents")
+m=int(input("enter your choice"))
+if(m==1 or m==5):
+  copy(a)
+if(m==2 or m==5):
+  duplicates(a)
+if(m==3 or m==5):
+  search(a) 
+if(m==4 or m==5):
+   kthIndex()
+
+output:
+
+Enter size of array5
+enter  5  elements:
+1
+1
+2
+3
+Enter size of array6
+enter  6  elements:
+1
+2
+3
+4
+5
+6
+1.copy  2.Remove3 duplicate
+Enter size of array2
+enter  2  elements:
+1
+2
+1.copy  2.Remove3 duplicate
+Enter size of array3
+enter  3  elements:
+1
+2
+3
+1.copy  2.Remove3 duplicate
+Enter size of array5
+Enter size of array4
+enter  4  elements:
+1
+2
+Enter size of array4
+enter  4  elements:
+1
+2
+3
+4
+1.copy  2.Remove duplicates
+Enter size of array4
+enter  4  elements:
+1
+2
+3
+Enter size of array4
+enter  4  elements:
+11
+Enter size of array5
+enter  5  elements:
+1
+2
+3
+4
+Enter size of array3
+enter  3  elements:
+6
+1
+2
+1.copy  2.Remove duplicates  3.Delete kthindex  4.Search element  5.Display contents
+Enter size of array3
+enter  3  elements:
+1
+1
+Enter size of array5
+enter  5  elements:
+1
+1
+2
+3
+4
+1.copy  2.Remove duplicates  3.Search element 4.Delete kthindex   5.Display contents
+enter your choice5
+copied elements are [1, 1, 2, 3, 4]
+Duplicates are [1, 2, 3, 4]
+enter search key1
+the element is present
+Enter kth index1
+after removing k th index [1, 2, 3, 4]
