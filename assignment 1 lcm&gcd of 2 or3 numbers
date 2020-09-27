@@ -1,0 +1,23 @@
+import math
+n=int(input("enter n value:"))
+l=[]
+if(n==2 or n==3):
+ for i in range(0,n):
+  a=int(input("enter value:"))
+  l.append(a)
+ gcdsol=math.gcd(l[0],l[1])
+ for i in range(2,n):
+  gcdsol=math.gcd(gcdsol,l[i])
+ print("gcd is",gcdsol)
+ p=1
+ for i in range(0,n):
+  p=p*l[i]
+ print("lcm is",p/gcdsol)
+else:print("enter valid numbers")
+
+output
+enter n value:2
+enter value:2
+enter value:4
+gcd is 2
+lcm is 4.0
