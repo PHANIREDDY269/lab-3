@@ -1,0 +1,28 @@
+def search(p,a):
+  f=0
+  for i in a:
+   if(p==i):
+    f=1
+  if(f==1):
+     print("the element is present")
+  else:
+     print("no such element is found")
+
+s=int(input("Enter size of array"))
+a=[]
+print("enter ",s," elements:")
+for i in range(0,s):
+  q=int(input())
+  a.append(q)
+p=int(input("Enter search key "))
+search(p,a)
+
+output:
+Enter size of array4
+enter 4 elements:
+1
+2
+3
+4
+Enter search key2
+the element is present
