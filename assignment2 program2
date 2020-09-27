@@ -1,0 +1,33 @@
+b=[]
+a=int(input("Enter no of arrays:"))
+for i in range(0,a):
+  print("Enter no of elements in ",i+1," array")
+  s=int(input())
+  print("enter ",s," elements")
+  for k in range(0,s):
+    e=int(input())
+    b.append(e)
+print("concatenated array:",b)
+
+output:
+Enter no of arrays:3
+Enter no of elements in  1  array
+2
+enter  2  elements
+1
+2
+Enter no of elements in  2  array
+6
+enter  6  elements
+1
+2
+3
+5
+4
+6
+Enter no of elements in  3  array
+2
+enter  2  elements
+154
+14
+concatenated array: [1, 2, 1, 2, 3, 5, 4, 6, 154, 14]
