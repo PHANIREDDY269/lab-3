@@ -1,0 +1,21 @@
+import math
+n=int(input("enter n"))
+p=0
+t=n
+k=n
+c=0
+sum=0
+while(k>0):
+  rem=k%10
+  c=c+1
+  k=k//10
+  sum+=rem
+print("sum of digits is",sum)
+while(t>0): 
+ r=t%10
+ p=p+pow(r,c)
+ t=t//10
+if(p==n):
+ print("it is amstrong number")
+else:
+  print("not")
