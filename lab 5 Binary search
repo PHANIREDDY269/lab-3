@@ -8,7 +8,7 @@ print(l)
 p=int(input("Enter an Element to search:"))
 f=0
 low=0
-high=n
+high=n-1
 while(low<=high):
  mid=(high+low)//2
  if(p==l[mid]):
