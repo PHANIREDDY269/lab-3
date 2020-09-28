@@ -1,15 +1,9 @@
-def binary():
-  l=[]
-  n=int(input("enter no of elements"))
-  for i in range(0,n):
-    k=int(input())
-    l.append(k)
+def binary(l,p):
   l.sort()
-  print(l)
+  n=len(l)
   f=0
   low=0
   high=n-1
-  p=int(input("enter element to search"))
   while(low<=high):
     mid=(high+low)//2
     if(p==l[mid]):
@@ -24,16 +18,10 @@ def binary():
       high=n-1
   if(f==0):
     print("no such element is found")
-binary()
+l=[10,20,30,40,50,70,15]
+k=30
+binary(l,k)
 
 output:
-enter no of elements5
-4
-5
-6
-7
-8
-[4, 5, 6, 7, 8]
-enter element to search4
-p is find at loc 1
+p is find at loc 4
 
