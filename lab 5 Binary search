@@ -3,6 +3,7 @@ n=int(input("Enter no of elements:"))
 for i in range(0,n):
   k=int(input("Enter element:"))
   l.append(k)
+l.sort()
 print(l)
 p=int(input("Enter an Element to search:"))
 f=0
@@ -16,10 +17,10 @@ while(low<=high):
   break
  elif(p<l[mid]):
   low=0
-  high=mid
+  high=mid-1
  else:
   low=mid+1
-  high=n
+  high=n-1
 if(f==0):
   print("Element not found")
   
