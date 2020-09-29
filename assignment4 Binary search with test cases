@@ -1,3 +1,6 @@
+
+
+
 #implementation of binary by using test cases
 n1 = int(input("enter a number between 1 to 3 : "))
 if n1 == 1:
